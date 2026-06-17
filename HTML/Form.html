@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Register New Member</h1>
+    <form>
+
+        <label for="Fname">First Name :</label>
+        <input type="text" name="FirstName" id="Fname" pattern="[A-Za-z]+" required><br><br>
+
+        <label for="MobNo">Mobile No : </label>
+        <input type="tel" name="MobNo" id="MobNo" pattern="[0-9]{10}" title="Enter 10 digit mobile number" required><br><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email"><br><br>
+
+        <label for="">Gender :</label>
+        <input type="radio" id="Male" name="Gender" value="Male">
+        <label for="Male">Male</label>
+
+        <input type="radio" id="Female" name="Gender" value="FeMale">
+        <label for="Female">Female</label>
+
+        <input type="radio" id="Other" name="Gender" value="Other">
+        <label for="Other">Other</label><br><br>
+
+        <label for="Address">Address</label>
+        <textarea name="text" name="Address" id="Address" cols="20" rows="6"></textarea><br><br>
+
+
+        <label for="Designation">Designation :</label>
+        <select name="selected state" id="Designation">
+
+            <option value="0">--Selected Designation--</option>
+            <option value="Principal">Principal</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Staff">Staff</option>
+        </select><br><br>
+
+        <label for="Department">Department</label>
+        <select name="Select Department" id="Department">
+            <option value="0">--Selected Department--</option>
+            <option value="Arts">Arts</option>
+            <option value="Commerce">Commerce</option>
+            <option value="Science">Science</option>
+            <option value="Account">Account</option>
+
+        </select><br><br>
+
+        <button>Submit</button>
+        <button>Reset</button>
+
+    </form>
+</body>
+
+</html>
